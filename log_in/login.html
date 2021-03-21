@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title> ButterFile </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="shortcut icon" href="../logo/tabIcon.png" >
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="../logo/tabIcon.png" alt="logo" class="logo"></a>
+            <div class="toggle" onclick="toggleMenu();"> </div>
+            <ul class="navbar">
+                <li><a href="../landing Page/landingPage.html">Home</a></li>
+                <li><a href="../about/about/about.html">About</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </header>
+        
+
+        <div class="container">
+            <div class="user signinBx">
+                <div class="formBx">
+                    <form action="../Konten/dashboard.html">
+                        <h2>SIGN IN</h2>
+                        <input type="text" name="" placeholder="NIP" required>
+                        <input type="password" name="" placeholder="Password" required>
+                        <input type= "submit" value="Login" onclick="dashboard()">
+                        <p class="forgotPassword">Tidak ingat password? <a href="#"> Forgot Password </a> </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script>
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            menuToggle.classList.toggle('active')
+            var navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active')
+        }
+
+        function Dashboard(){
+            window.location = "wwww.google.com";
+        }
+    </script>
+</body>
+
+</html>

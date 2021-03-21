@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+    <title> ButterFile </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="../../logo/tabIcon.png">
+</head>
+
+<body>
+    <section>
+            <header>
+                <a href="#"><img src="../../logo/tabIcon.png" alt="logo" class="logo"></a>
+                <div class="toggle" onclick="toggleMenu();"> </div>
+                <ul class="navbar">
+                    <li><a href="../../Landing Page/landingPage.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="../../log_in/login.html">Login</a></li>
+                </ul>
+            </header>
+
+         <div class="main">
+            <div class="img"></div>
+            <h1>Butterfile</h1>
+            <div class="text">Tentang Web</div>
+            <p><b>Butterfile</b> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, nisi veniam ex, 
+            ad debitis quibusdam iure tempore vel nemo fuga fugiat iusto architecto 
+            consequatur nihil suscipit et aspernatur! Dolor, quasi! </p>
+            
+            <ul class="scm">
+                <li><a href="#"><img src="../../logo/facebook.png" alt="facebook"> </a></li>
+                <li><a href="#"><img src="../../logo/twitter.png" alt="twitter"> </a></li>
+                <li><a href="#"><img src="../../logo/instagram.png" alt="instagram"> </a></li>
+            </ul>   
+        </div> 
+    </section>
+
+    <script>
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            menuToggle.classList.toggle('active')
+            var navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>

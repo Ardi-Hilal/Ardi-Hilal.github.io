@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="landingPage.css">
+    <link rel="shortcut icon" href="../logo/tabIcon.png">
+    <title>ButterFile</title>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="../logo/tabIcon.png" alt="logo" class="logo"></a>
+            <div class="toggle" onclick="toggleMenu();"> </div>
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="../about/about/about.html">About</a></li>
+                <li><a href="../log_in/login.html">Login</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Lets fly beautifully <br> with <span> ButterFile </span> </h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo ducimus dolor id, voluptatem odio est quaerat consequuntur vitae nostrum at enim veritatis minus autem inventore labore.
+                    Quos voluptas repellat repellendus?
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="https://blog.klob.id/wp-content/uploads/2019/09/tokoh_konservatif.png" class="kerja">
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            menuToggle.classList.toggle('active')
+            var navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active')
+        }
+    </script>
+    
+</body>
+</html>
